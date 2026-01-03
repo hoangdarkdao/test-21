@@ -1,0 +1,75 @@
+{
+    "tsp_semo": {
+         "MoMCTS": [
+            "logs/momcts/tsp_semo/test_100/v10/samples_1~300.json",
+            "logs/momcts/tsp_semo/test_100/v20/samples_1~300.json",
+            "logs/momcts/tsp_semo/test_100/v30/samples_1~300.json"
+
+        ],
+        "NSGA2": [
+            "logs/nsga2/tsp_semo/test_100/v1/samples_1~300.json",
+            "logs/nsga2/tsp_semo/test_100/v2/samples_1~300.json",
+            "logs/nsga2/tsp_semo/test_100/v3/samples_1~300.json"
+        ],
+        "MEOH": [
+            "logs/meoh/tsp_semo/test_100/v2/samples_1~300.json",
+            "logs/meoh/tsp_semo/test_100/v3/samples_1~300.json"
+            
+        ],
+        "MOMEA": [
+            "logs/moead/tsp_semo/test_100/v1/samples_1~300.json",
+            "logs/moead/tsp_semo/test_100/v3/samples_1~300.json"
+
+        ]
+    },
+    "bi_kp": {
+         "MoMCTS": [
+            "logs/momcts/bi_kp/test_100/v10/samples_1~300.json",
+            "logs/momcts/bi_kp/test_100/v20/samples_1~300.json",
+            "logs/momcts/bi_kp/test_100/v30/samples_1~300.json"
+
+        ],
+        "NSGA2": [
+            "logs/nsga2/bi_kp/test_100/v1/samples_1~300.json",
+            "logs/nsga2/bi_kp/test_100/v2/samples_1~300.json",
+            "logs/nsga2/bi_kp/test_100/v3/samples_1~300.json"
+        ],
+        "MEOH": [
+            "logs/meoh/bi_kp/test_100/v2/samples_1~300.json",
+            "logs/meoh/bi_kp/test_100/v3/samples_1~300.json",
+            "logs/meoh/bi_kp/test_100/v1/samples_1~300.json"
+            
+        ],
+        "MOMEA": [
+            "logs/moead/bi_kp/test_100/v1/samples_1~300.json",
+            "logs/moead/bi_kp/test_100/v3/samples_1~300.json",
+            "logs/moead/bi_kp/test_100/v2/samples_1~300.json"
+
+        ]
+    },
+    "bi_cvrp": {
+         "MoMCTS": [
+            "logs/momcts/bi_cvrp/test_100/v1/samples_1~300.json",
+            "logs/momcts/bi_cvrp/test_100/v2/samples_1~300.json",
+            "logs/momcts/bi_cvrp/test_100/v3/samples_1~300.json"
+
+        ],
+        "NSGA2": [
+            "logs/nsga2/bi_cvrp/test_100/v1/samples_1~300.json",
+            "logs/nsga2/bi_cvrp/test_100/v2/samples_1~300.json",
+            "logs/nsga2/bi_cvrp/test_100/v3/samples_1~300.json"
+        ],
+        "MEOH": [
+            "logs/meoh/bi_cvrp/test_100/v1/samples_1~300.json",
+            "logs/meoh/bi_cvrp/test_100/v2/samples_1~300.json",
+            "logs/meoh/bi_cvrp/test_100/v3/samples_1~300.json"
+            
+        ],
+        "MOMEA": [
+            "logs/moead/bi_cvrp/test_100/v1/samples_1~300.json",
+            "logs/moead/bi_cvrp/test_100/v2/samples_1~300.json",
+            "logs/moead/bi_cvrp/test_100/v3/samples_1~300.json"
+
+        ]
+    }
+}
