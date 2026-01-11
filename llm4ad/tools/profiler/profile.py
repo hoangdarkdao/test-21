@@ -89,6 +89,7 @@ class ProfilerBase:
     def register_function(self, prompt: str, function: Function, program: str = '', *, resume_mode=False, **kwargs):
         """Record an obtained function.
         """
+        print("dang log")
         try:
             self._register_function_lock.acquire()
             self._num_samples += 1
@@ -97,6 +98,7 @@ class ProfilerBase:
             self._write_json(prompt, function, program, **kwargs)
         finally:
             self._register_function_lock.release()
+        
 
     def finish(self):
         pass

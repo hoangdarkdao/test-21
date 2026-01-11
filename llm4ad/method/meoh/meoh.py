@@ -251,6 +251,7 @@ class MEoH:
             try:
                 # get a new func using i1
                 prompt = MEoHPrompt.get_prompt_i1(self._task_description_str, self._function_to_evolve)
+                print(prompt)
                 self._sample_evaluate_register(prompt)
             except Exception as e:
                 if self._debug_mode:

@@ -9,10 +9,10 @@ from llm4ad.method.momcts import MOMCTS_AHD, MOMCTSProfiler
 from llm4ad.method.meoh import MEoH, MEoHProfiler
 from llm4ad.method.eoh import EoH, EoHProfiler
 from llm4ad.method.reevo import ReEvo, ReEvoProfiler
-from llm4ad.method.hsevo import HSEvo, HSEvoProfiler
 from llm4ad.method.nsga2 import NSGA2, NSGA2Profiler
 from llm4ad.method.mpage import MPaGEProfiler, MPaGE
 from llm4ad.method.moead import MOEAD, MOEADProfiler
+from llm4ad.method.hsevo import HSEvo, HSEvoProfiler
 import os
 from dotenv import load_dotenv
 
@@ -26,7 +26,8 @@ algorithm_map = {
     'hsevo': (HSEvo, HSEvoProfiler),
     'nsga2': (NSGA2, NSGA2Profiler),
     'mpage': (MPaGE, MPaGEProfiler),
-    'moead': (MOEAD, MOEADProfiler)
+    'moead': (MOEAD, MOEADProfiler),
+    'hsevo': (HSEvo, HSEvoProfiler)
 }
 
 task_map = {
@@ -37,10 +38,10 @@ task_map = {
 }
 
 # Change variable here
-ALGORITHM_NAME = 'reevo'  # Could also be 'MEoH' or 'NSGA2'
+ALGORITHM_NAME = 'hsevo'  # Could also be 'MEoH' or 'NSGA2'
 PROBLEM_NAME = "tsp_semo" # Could also be "tsp_semo, bi_kp, bi_cvrp"
 exact_log_dir_name = "nhv_runtime_50/v1" # must be unique here
-api_key = os.getenv('API_KEY1') # change APIKEY1, APIKEY2, APIKEY3
+API_KEY = os.getenv("MISTRAL_API_KEY")
 
 if __name__ == '__main__':
     
@@ -49,7 +50,7 @@ if __name__ == '__main__':
     TaskClass = task_map[PROBLEM_NAME]
     
     llm = MistralApi(
-        keys=api_key,
+        keys=API_KEY,
         model='codestral-latest',
         timeout=60
     )
