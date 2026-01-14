@@ -124,7 +124,7 @@ class BICVRPEvaluation(Evaluation):
             timeout_seconds=90
         )
         self.n_instance = 8
-        self.problem_size = 100
+        self.problem_size = 20
         getData = GetData(self.n_instance, self.problem_size)
         self._datasets, self.cap = getData.generate_instances()
         self.ref_point = np.array([1.1, 1.1])
