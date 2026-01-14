@@ -138,7 +138,7 @@ class BITSPEvaluation(Evaluation):
         )
 
         self.n_instance = 4
-        self.problem_size = 50
+        self.problem_size = 20
         getData = GetData(self.n_instance, self.problem_size)
         self._datasets = getData.generate_instances()
         self.ref_point = np.array([1.1, 1.1])
