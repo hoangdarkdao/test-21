@@ -39,7 +39,7 @@ task_map = {
 
 # Change variable here
 ALGORITHM_NAME = 'hsevo'  # Could also be 'MEoH' or 'NSGA2'
-PROBLEM_NAME = "bi_cvrp" # Could also be "tsp_semo, bi_kp, bi_cvrp"
+PROBLEM_NAME = "tri_tsp" # Could also be "tsp_semo, bi_kp, bi_cvrp"
 exact_log_dir_name = "nhv_runtime_50/v1" # must be unique here
 API_KEY = os.getenv("MISTRAL_API_KEY")
 
